@@ -1,0 +1,5 @@
+Elastics = [ "http://192.168.56.50:9200" ]
+Host = ":8001"
+HttpDrainInterval = "1s"
+StaticsPath = "statics"
+BoltDDPath = "bolt.db"

@@ -1,0 +1,65 @@
+<!-- Log search -->
+<div id="main" class="container" role="main">
+
+    <!-- Main -->
+    <div id="filter">
+        <div class="row">
+            Add real-time filter:
+            <div class="col-lg-12">
+                <form class="query form-inline" ng-submit="registerFilter()">
+                    <input id="query"
+                           popover-trigger="focus"
+                           placeholder="Log keyword"
+                           class="search-query keywords left"
+                           ng-model="filter.keywordsText"
+                           ng-model-onblur focus-on="focusMe"
+                    />
+                    <select class="form-control left" ng-model="filter.level">
+                        <option value="">Log level</option>
+                        <option value="">All</option>
+                        <option value="debug">Debug</option>
+                        <option value="info">Info</option>
+                        <option value="warning">Warning</option>
+                        <option value="fatal">Fatal</option>
+                    </select>
+                    <button id="find" type="submit" class="btn btn-primary btn-lg left">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                    </button>
+                    <button id="clear-results" type="button" ng-click="clearResults()" class="btn btn-primary btn-lg right">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </button>
+                </form>
+            </div>
+
+            <div class="col-lg-12" ng-show="active_filter.keywordsText || active_filter.level">
+                <p>Filter:</p>
+                <div class="col-lg-12">
+                    <div class="col-lg-2 left">{{active_filter.keywordsText}}</div>
+                    <div class="col-lg-2 left">{{active_filter.level}}</div>
+                    <div class="col-lg-2 left" ng-click="unregisterFilter()">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results -->
+    <div id="logs" class="row">
+        <!-- Logs listing -->
+        <div ng-show="logs" class="col-lg-12">
+            <div id="logs-results">
+                <div class="results">
+                    <div ng-repeat="log in logs" class="row">
+                        <div class="col-lg-12" ng-class="log.level">
+                            <div class="time_col left">{{log.time | formatDate}}</div>
+                            <div class="level_col left">{{log.level}}</div>
+                            <div class="msg_col left">{{log.msg}}</div>
+                            <div class="user_col left">{{log.user}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

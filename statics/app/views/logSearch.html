@@ -1,0 +1,89 @@
+<!-- Log search -->
+<div id="main" class="container" role="main">
+
+    <!-- Main -->
+    <div id="search">
+        <div class="row">
+            <div class="col-lg-12">
+                <form class="query form-inline" ng-submit="findLogs()">
+                    <input id="query"
+                           popover-trigger="focus"
+                           placeholder="Log keyword"
+                           class="search-query left"
+                           ng-model="query.query"
+                           ng-model-onblur focus-on="focusMe"
+                    />
+                    <select class="form-control left" ng-model="query.level">
+                        <option value="">Log level</option>
+                        <option value="">All</option>
+                        <option value="debug">Debug</option>
+                        <option value="info">Info</option>
+                        <option value="warning">Warning</option>
+                        <option value="fatal">Fatal</option>
+                    </select>
+                    <div class='input-group date left' id='date-from'>
+                        <input type='text' ng-model="query.from" id='date-from-val' placeholder="From"/>
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                    <div class='input-group date left' id='date-to'>
+                        <input type='text' ng-model="query.to" id='date-to-val' placeholder="To"/>
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                    <button id="find" type="submit" class="btn btn-primary btn-lg left">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results -->
+    <div id="logs" class="row">
+        <!-- Logs listing -->
+        <div ng-show="logs" class="col-lg-12">
+            <div id="logs-results">
+                <div class="pagination-container">
+                    <pagination ng-show="pageCount > 1" max-size="10"
+                                items-per-page="itemsPerPage"
+                                class="pagination-sm"
+                                boundary-links="true"
+                                rotate="true"
+                                total-items="total"
+                                ng-model="currentPage"
+                                num-pages="pageCount">
+                    </pagination>
+                </div>
+                <div class="results">
+                    <div ng-repeat="log in logs" class="row">
+                        <div class="col-lg-10">
+                            <span>{{log.time}}</span>
+                            <span>{{log.level}}</span>
+                            <span>{{log.msg}}</span>
+                            <span>{{log.user}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination-container">
+                    <pagination ng-show="pageCount > 1" max-size="10"
+                                items-per-page="itemsPerPage"
+                                class="pagination-sm"
+                                boundary-links="true"
+                                rotate="true"
+                                total-items="total"
+                                ng-model="currentPage"
+                                num-pages="pageCount">
+                    </pagination>
+                </div>
+            </div>
+        </div>
+        <div ng-show="loadingLogs">
+            <h1 ng-show="loadingLogs">
+                <span>Loading logs...</span>
+            </h1>
+        </div>
+    </div>
+</div>

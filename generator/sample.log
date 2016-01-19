@@ -1,0 +1,95 @@
+016/01/11 11:21:38.954 [info] Account with login(test_login) verified!
+2016/01/11 11:21:38.954 [info] 127.0.0.1:46485 [11/Jan/2016:11:21:38 +0100] "PUT /api/account/verify HTTP/1.1" "" "Go-http-client/1.1" "Took: 5.288807ms"
+2016/01/11 11:21:39.051 [info] 127.0.0.1:46486 [11/Jan/2016:11:21:38 +0100] "POST /api/account/login HTTP/1.1" "" "Go-http-client/1.1" "Took: 96.26857ms"
+2016/01/11 11:21:39.056 [info] 127.0.0.1:46487 [11/Jan/2016:11:21:39 +0100] "GET /api/account/test_login HTTP/1.1" "" "Go-http-client/1.1" "Took: 4.428072ms"
+2016/01/11 11:21:40.980 [info] Mail to: email@email.com sent!
+2016/01/11 11:21:40.980 [info] Account with login(test_login) and email(email@email.com) has been created!
+2016/01/11 11:21:40.980 [info] 127.0.0.1:46488 [11/Jan/2016:11:21:39 +0100] "POST /api/account/signup HTTP/1.1" "" "Go-http-client/1.1" "Took: 1.920300511s"
+2016/01/11 11:21:40.991 [info] Account with login(test_login) verified!
+2016/01/11 11:21:40.991 [info] 127.0.0.1:46490 [11/Jan/2016:11:21:40 +0100] "PUT /api/account/verify HTTP/1.1" "" "Go-http-client/1.1" "Took: 3.514847ms"
+2016/01/11 11:21:41.084 [info] 127.0.0.1:46491 [11/Jan/2016:11:21:40 +0100] "POST /api/account/login HTTP/1.1" "" "Go-http-client/1.1" "Took: 92.46199ms"
+2016/01/11 11:21:41.088 [error] No account with specified login([wrong_login])!
+2016/01/11 11:21:41.088 [info] 127.0.0.1:46492 [11/Jan/2016:11:21:41 +0100] "GET /api/account/wrong_login HTTP/1.1" "" "Go-http-client/1.1" "Took: 3.601736ms"
+2016/01/11 11:21:43.272 [info] Mail to: email@email.com sent!
+2016/01/11 11:21:43.272 [info] Account with login(test_login) and email(email@email.com) has been created!
+2016/01/11 11:21:43.272 [info] 127.0.0.1:46493 [11/Jan/2016:11:21:41 +0100] "POST /api/account/signup HTTP/1.1" "" "Go-http-client/1.1" "Took: 2.182443627s"
+2016/01/11 11:21:43.280 [info] Account with login(test_login) verified!
+2016/01/11 11:21:43.280 [info] 127.0.0.1:46496 [11/Jan/2016:11:21:43 +0100] "PUT /api/account/verify HTTP/1.1" "" "Go-http-client/1.1" "Took: 3.186213ms"
+2016/01/11 11:21:43.281 [error] You need to sign in to access this content.
+2016/01/11 11:21:43.281 [info] 127.0.0.1:46497 [11/Jan/2016:11:21:43 +0100] "GET /api/account/test_login HTTP/1.1" "" "Go-http-client/1.1" "Took: 175.455µs"
+2016/01/11 11:21:45.064 [info] Mail to: test@test.com sent!
+2016/01/11 11:21:45.064 [info] Account with login(test_login) and email(test@test.com) has been created!
+2016/01/11 11:21:45.064 [info] 127.0.0.1:46498 [11/Jan/2016:11:21:43 +0100] "POST /api/account/signup HTTP/1.1" "" "Go-http-client/1.1" "Took: 1.781663247s"
+2016/01/11 11:21:45.069 [info] Account with login(test_login) verified!
+2016/01/11 11:21:45.069 [info] 127.0.0.1:46500 [11/Jan/2016:11:21:45 +0100] "PUT /api/account/verify HTTP/1.1" "" "Go-http-client/1.1" "Took: 3.051359ms"
+2016/01/11 11:21:45.162 [info] 127.0.0.1:46501 [11/Jan/2016:11:21:45 +0100] "POST /api/account/login HTTP/1.1" "" "Go-http-client/1.1" "Took: 91.784167ms"
+2016/01/11 11:21:47.438 [info] Mail to: test@test.com sent!
+2016/01/11 11:21:47.438 [info] Account with login(test_login) and email(test@test.com) has been created!
+2016/01/11 11:21:47.438 [info] 127.0.0.1:46502 [11/Jan/2016:11:21:45 +0100] "POST /api/account/signup HTTP/1.1" "" "Go-http-client/1.1" "Took: 2.274576537s"
+2016/01/11 11:21:47.445 [info] Account with login(test_login) verified!
+2016/01/11 11:21:47.445 [info] 127.0.0.1:46504 [11/Jan/2016:11:21:47 +0100] "PUT /api/account/verify HTTP/1.1" "" "Go-http-client/1.1" "Took: 2.958452ms"
+2016/01/11 11:21:47.446 [error] Login can't be missing!
+2016/01/11 11:21:47.446 [info] 127.0.0.1:46505 [11/Jan/2016:11:21:47 +0100] "POST /api/account/login HTTP/1.1" "" "Go-http-client/1.1" "Took: 93.098µs"
+2016/01/11 11:21:49.806 [info] Mail to: test@test.com sent!
+2016/01/11 11:21:49.806 [info] Account with login(test_login) and email(test@test.com) has been created!
+2016/01/11 11:21:49.806 [info] 127.0.0.1:46506 [11/Jan/2016:11:21:47 +0100] "POST /api/account/signup HTTP/1.1" "" "Go-http-client/1.1" "Took: 2.359391708s"
+2016/01/11 11:21:49.812 [info] Account with login(test_login) verified!
+2016/01/11 11:21:49.812 [info] 127.0.0.1:46509 [11/Jan/2016:11:21:49 +0100] "PUT /api/account/verify HTTP/1.1" "" "Go-http-client/1.1" "Took: 2.560966ms"
+2016/01/11 11:21:49.813 [error] Password can't be missing!
+2016/01/11 11:21:49.813 [info] 127.0.0.1:46510 [11/Jan/2016:11:21:49 +0100] "POST /api/account/login HTTP/1.1" "" "Go-http-client/1.1" "Took: 76.222µs"
+2016/01/11 11:21:51.801 [info] Mail to: test@test.com sent!
+2016/01/11 11:21:51.801 [info] Account with login(test_login) and email(test@test.com) has been created!
+2016/01/11 11:21:51.801 [info] 127.0.0.1:46511 [11/Jan/2016:11:21:49 +0100] "POST /api/account/signup HTTP/1.1" "" "Go-http-client/1.1" "Took: 1.986795134s"
+2016/01/11 11:21:51.889 [error] Account is not enabled!
+2016/01/11 11:21:51.889 [info] 127.0.0.1:46513 [11/Jan/2016:11:21:51 +0100] "POST /api/account/login HTTP/1.1" "" "Go-http-client/1.1" "Took: 88.057589ms"
+2016/01/11 11:21:54.054 [info] Mail to: email@email.com sent!
+2016/01/11 11:21:54.054 [info] Account with login(test_login) and email(email@email.com) has been created!
+2016/01/11 11:21:54.054 [info] 127.0.0.1:46514 [11/Jan/2016:11:21:51 +0100] "POST /api/account/signup HTTP/1.1" "" "Go-http-client/1.1" "Took: 2.161524889s"
+2016/01/11 11:21:54.059 [info] Account with login(test_login) verified!
+2016/01/11 11:21:54.059 [info] 127.0.0.1:46517 [11/Jan/2016:11:21:54 +0100] "PUT /api/account/verify HTTP/1.1" "" "Go-http-client/1.1" "Took: 2.273541ms"
+2016/01/11 11:21:56.228 [info] Mail to: email@email.com sent!
+2016/01/11 11:21:56.228 [info] Account with login(test_1_login) and email(email@email.com) has been created!
+2016/01/11 11:21:56.228 [info] 127.0.0.1:46518 [11/Jan/2016:11:21:54 +0100] "POST /api/account/signup HTTP/1.1" "" "Go-http-client/1.1" "Took: 2.167807623s"
+2016/01/11 11:21:56.246 [info] Account with login(test_1_login) verified!
+2016/01/11 11:21:56.246 [info] 127.0.0.1:46520 [11/Jan/2016:11:21:56 +0100] "PUT /api/account/verify HTTP/1.1" "" "Go-http-client/1.1" "Took: 13.878756ms"
+2016/01/11 11:21:56.252 [error] Account with email([email@email.com]) already exists in DB!
+2016/01/11 11:21:56.252 [info] 127.0.0.1:46521 [11/Jan/2016:11:21:56 +0100] "POST /api/account/signup HTTP/1.1" "" "Go-http-client/1.1" "Took: 6.27356ms"
+2016/01/11 11:21:58.067 [info] Mail to: email@email.com sent!
+2016/01/11 11:21:58.067 [info] Account with login(test_login) and email(email@email.com) has been created!
+2016/01/11 11:21:58.067 [info] 127.0.0.1:46522 [11/Jan/2016:11:21:56 +0100] "POST /api/account/signup HTTP/1.1" "" "Go-http-client/1.1" "Took: 1.803222248s"
+2016/01/11 11:21:58.079 [info] Account with login(test_login) verified!
+2016/01/11 11:21:58.079 [info] 127.0.0.1:46525 [11/Jan/2016:11:21:58 +0100] "PUT /api/account/verify HTTP/1.1" "" "Go-http-client/1.1" "Took: 7.80246ms"
+2016/01/11 11:21:58.081 [error] Account with login([test_login]) already exists in DB!
+2016/01/11 11:21:58.081 [info] 127.0.0.1:46526 [11/Jan/2016:11:21:58 +0100] "POST /api/account/signup HTTP/1.1" "" "Go-http-client/1.1" "Took: 1.447731ms"
+2016/01/11 11:21:58.083 [error] Password can't be missing!
+2016/01/11 11:21:58.083 [info] 127.0.0.1:46527 [11/Jan/2016:11:21:58 +0100] "POST /api/account/signup HTTP/1.1" "" "Go-http-client/1.1" "Took: 136.682µs"
+2016/01/11 11:21:58.083 [error] Password should be at least [8] characters length!
+2016/01/11 11:21:58.083 [info] 127.0.0.1:46528 [11/Jan/2016:11:21:58 +0100] "POST /api/account/signup HTTP/1.1" "" "Go-http-client/1.1" "Took: 111.463µs"
+2016/01/11 11:21:58.084 [error] Login can't be missing!
+2016/01/11 11:21:58.084 [info] 127.0.0.1:46529 [11/Jan/2016:11:21:58 +0100] "POST /api/account/signup HTTP/1.1" "" "Go-http-client/1.1" "Took: 66.795µs"
+2016/01/11 11:21:58.084 [error] Email can't be missing!
+2016/01/11 11:21:58.084 [info] 127.0.0.1:46530 [11/Jan/2016:11:21:58 +0100] "POST /api/account/signup HTTP/1.1" "" "Go-http-client/1.1" "Took: 65.373µs"
+2016/01/11 11:21:58.084 [error] Invalid email format: [email.com]
+2016/01/11 11:21:58.084 [info] 127.0.0.1:46531 [11/Jan/2016:11:21:58 +0100] "POST /api/account/signup HTTP/1.1" "" "Go-http-client/1.1" "Took: 120.35µs"
+2016/01/11 11:21:59.865 [info] Mail to: email@email.com sent!
+2016/01/11 11:21:59.865 [info] Account with login(test_login) and email(email@email.com) has been created!
+2016/01/11 11:21:59.865 [info] 127.0.0.1:46532 [11/Jan/2016:11:21:58 +0100] "POST /api/account/signup HTTP/1.1" "" "Go-http-client/1.1" "Took: 1.77999758s"
+2016/01/11 11:21:59.870 [error] Login and verfication code doesn't match!
+2016/01/11 11:21:59.870 [info] 127.0.0.1:46534 [11/Jan/2016:11:21:59 +0100] "PUT /api/account/verify HTTP/1.1" "" "Go-http-client/1.1" "Took: 5.077074ms"
+2016/01/11 11:22:01.621 [info] Mail to: email@email.com sent!
+2016/01/11 11:22:01.621 [info] Account with login(test_login) and email(email@email.com) has been created!
+2016/01/11 11:22:01.621 [info] 127.0.0.1:46535 [11/Jan/2016:11:21:59 +0100] "POST /api/account/signup HTTP/1.1" "" "Go-http-client/1.1" "Took: 1.748341785s"
+2016/01/11 11:22:01.621 [error] Verification code can't be empty!
+2016/01/11 11:22:01.621 [info] 127.0.0.1:46537 [11/Jan/2016:11:22:01 +0100] "PUT /api/account/verify HTTP/1.1" "" "Go-http-client/1.1" "Took: 82.257µs"
+2016/01/11 11:22:03.667 [info] Mail to: email@email.com sent!
+2016/01/11 11:22:03.667 [info] Account with login(test_login) and email(email@email.com) has been created!
+2016/01/11 11:22:03.667 [info] 127.0.0.1:46538 [11/Jan/2016:11:22:01 +0100] "POST /api/account/signup HTTP/1.1" "" "Go-http-client/1.1" "Took: 2.043868614s"
+2016/01/11 11:22:08.672 [error] Verification code expired!
+2016/01/11 11:22:08.672 [info] 127.0.0.1:46542 [11/Jan/2016:11:22:08 +0100] "PUT /api/account/verify HTTP/1.1" "" "Go-http-client/1.1" "Took: 1.411547ms"
+2016/01/11 11:22:10.444 [info] Mail to: email@email.com sent!
+2016/01/11 11:22:10.444 [info] Account with login(test_login) and email(email@email.com) has been created!
+2016/01/11 11:22:10.444 [info] 127.0.0.1:46543 [11/Jan/2016:11:22:08 +0100] "POST /api/account/signup HTTP/1.1" "" "Go-http-client/1.1" "Took: 1.770930924s"
+2016/01/11 11:22:10.452 [info] Account with login(test_login) verified!
+2016/01/11 11:22:10.452 [info] 127.0.0.1:46545 [11/Jan/2016:11:22:10 +0100] "PUT /api/account/verify HTTP/1.1" "" "Go-http-client/1.1" "Took: 5.554987ms"
+2016/01/11 11:22:10.453 [error] Account has been already verified!
+2016/01/11 11:22:10.453 [info] 127.0.0.1:46546 [11/Jan/2016:11:22:10 +0100] "PUT /api/account/verify HTTP/1.1" "" "Go-http-client/1.1" "Took: 1.244658ms"
