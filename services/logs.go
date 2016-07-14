@@ -1,15 +1,16 @@
 package services
 
 import (
+	"encoding/json"
+	"fmt"
+	"time"
+
+	"github.com/Sirupsen/logrus"
+	"github.com/boltdb/bolt"
 	"github.com/mateuszdyminski/logag/libcfg"
 	"github.com/mateuszdyminski/logag/model"
 	"github.com/mateuszdyminski/logag/ws"
-	"encoding/json"
-	"fmt"
-	"github.com/Sirupsen/logrus"
-	"github.com/boltdb/bolt"
 	"gopkg.in/olivere/elastic.v3"
-	"time"
 )
 
 type LogService struct {

@@ -4,8 +4,9 @@ package middlewares
 import (
 	"net/http"
 
-	"github.com/Sirupsen/logrus"
 	"time"
+
+	"github.com/Sirupsen/logrus"
 )
 
 // Log is a middleware that logs details about the request/response.

@@ -3,11 +3,12 @@ package ws
 import (
 	"time"
 
+	"encoding/json"
+	"strings"
+
+	"github.com/Sirupsen/logrus"
 	"github.com/gorilla/websocket"
 	"github.com/mateuszdyminski/logag/model"
-	"encoding/json"
-	"github.com/Sirupsen/logrus"
-	"strings"
 )
 
 const (

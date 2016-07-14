@@ -2,8 +2,9 @@ package libcfg
 
 import (
 	"flag"
-	"github.com/BurntSushi/toml"
 	"io/ioutil"
+
+	"github.com/BurntSushi/toml"
 )
 
 var (
@@ -12,7 +13,7 @@ var (
 	host              = flag.String("host", "", "host address")
 	httpDrainInterval = flag.String("http-drain-interval", "", "Http drain interval")
 	batchSize         = flag.Int("batch-size", 3, "ElasticSearch ingres batch size")
-	boltDDPath         = flag.String("bolt-db-path", "", "Path to boltDB data file")
+	boltDDPath        = flag.String("bolt-db-path", "", "Path to boltDB data file")
 )
 
 type Cfg struct {

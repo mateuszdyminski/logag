@@ -29,7 +29,7 @@ angular.module('LA').controller('RealTimeCtrl', function($scope, $timeout, Realt
         return conn_id;
     }
 
-    var ws = new WebSocket('ws://127.0.0.1:8001/wsapi/ws/' + getId());
+    var ws = new WebSocket('ws://' + window.location.host + '/wsapi/ws/' + getId());
 
     ws.onmessage = function(event) {
         $timeout(function() {

@@ -1,20 +1,21 @@
 package main
 
 import (
-	"github.com/mateuszdyminski/logag/liblog"
-	"github.com/mateuszdyminski/logag/libcfg"
-	"github.com/mateuszdyminski/logag/handlers"
-	"github.com/mateuszdyminski/logag/services"
-	"github.com/mateuszdyminski/logag/middlewares"
-	"github.com/Sirupsen/logrus"
-	"github.com/carbocation/interpose"
-	"github.com/gorilla/mux"
-	"github.com/tylerb/graceful"
-	"gopkg.in/olivere/elastic.v3"
 	"net/http"
 	"time"
-	"github.com/mateuszdyminski/logag/ws"
+
+	"github.com/Sirupsen/logrus"
 	"github.com/boltdb/bolt"
+	"github.com/carbocation/interpose"
+	"github.com/gorilla/mux"
+	"github.com/mateuszdyminski/logag/handlers"
+	"github.com/mateuszdyminski/logag/libcfg"
+	"github.com/mateuszdyminski/logag/liblog"
+	"github.com/mateuszdyminski/logag/middlewares"
+	"github.com/mateuszdyminski/logag/services"
+	"github.com/mateuszdyminski/logag/ws"
+	"github.com/tylerb/graceful"
+	"gopkg.in/olivere/elastic.v3"
 )
 
 // Application is the application object that runs HTTP server.

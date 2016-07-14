@@ -1,8 +1,10 @@
 package handlers
+
 import (
-	"github.com/Sirupsen/logrus"
-	"net/http"
 	"encoding/json"
+	"net/http"
+
+	"github.com/Sirupsen/logrus"
 )
 
 func WriteErr(w http.ResponseWriter, err error, httpCode int) {
@@ -13,7 +15,7 @@ func WriteErr(w http.ResponseWriter, err error, httpCode int) {
 
 	var errMap = map[string]interface{}{
 		"httpStatus": httpCode,
-		"error": err.Error(),
+		"error":      err.Error(),
 	}
 
 	errJson, _ := json.Marshal(errMap)

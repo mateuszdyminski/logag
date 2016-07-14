@@ -1,15 +1,16 @@
 package handlers
 
 import (
-	"github.com/mateuszdyminski/logag/model"
-	"github.com/mateuszdyminski/logag/services"
-	"github.com/mateuszdyminski/logag/ws"
 	"encoding/json"
-	"github.com/Sirupsen/logrus"
-	"github.com/gorilla/mux"
 	"net/http"
 	"strconv"
 	"time"
+
+	"github.com/Sirupsen/logrus"
+	"github.com/gorilla/mux"
+	"github.com/mateuszdyminski/logag/model"
+	"github.com/mateuszdyminski/logag/services"
+	"github.com/mateuszdyminski/logag/ws"
 )
 
 type LogResources struct {
